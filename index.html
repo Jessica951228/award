@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="學習集點卡"/>
+    <meta name="author" content="臻臻"/>
+    <meta name="keywords" content="學習,集點,家教,獎勵,稱讚,,考試,讀書,鼓勵,加油"/>
+    <title>學習集點卡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>🎯 英語學習集點卡</h1>
+        <div class="points-display">
+            🌟 目前點數: <span id="pointCount">0</span> / 25
+        </div>
+    </div>
+
+    <div class="instructions">
+        💡 <strong>使用說明：</strong> 答對問題就點擊格子集點！記得複製保存碼，下次上課時貼上就能恢復進度
+    </div>
+
+    <div class="save-section">
+        <h3>💾 進度保存 & 載入</h3>
+        <div>
+            <button class="btn save-btn" onclick="generateSaveCode()">📋 產生保存碼</button>
+            <div id="saveCodeDisplay" style="margin: 10px 0;"></div>
+        </div>
+        <div>
+            <input type="text" class="save-input" id="loadInput" placeholder="貼上保存碼來恢復進度">
+            <br>
+            <button class="btn load-btn" onclick="loadProgress()">📥 載入進度</button>
+            <button class="btn reset-btn" onclick="resetPoints()">🔄 重置</button>
+        </div>
+    </div>
+
+    <div class="grid-container" id="pointGrid">
+        <!-- 25個格子會由JavaScript動態生成 -->
+    </div>
+
+    <div class="reward-section">
+        <h3>🎁 獎勵兌換</h3>
+        <div class="reward-item" id="reward1">🎪 10點: 小點心</div>
+        <div class="reward-item" id="reward2">🎮 20點: 玩遊戲十分鐘</div>
+        <div class="reward-item" id="reward3">🏆 25點: 玩遊戲二十分鐘</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
