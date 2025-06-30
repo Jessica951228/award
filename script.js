@@ -1,5 +1,5 @@
 let collectedPoints = 0;
-        const totalCells = 25;
+        const totalCells = 50;
         const pointEmojis = ['⭐', '🎯', '🏆', '🎪', '🎮', '🌟', '💎', '🎁'];
 
         // 初始化網格
